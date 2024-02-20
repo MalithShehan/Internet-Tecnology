@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lesson-Table</title>
+    <style>
+        table {
+            border: 1px solid black;
+            
+    
+        }
+        th {
+            background-color: aquamarine;
+            border: 1px solid red;
+        }
+        td {
+            border: 1px solid rgb(30, 111, 242);
+        } 
+
+        h1 {
+            color: rgb(0, 0, 0);
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Customer Details -->
+
+    <table>
+        <tr>
+            <h1><u>Customer Details</u></h1>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+        <tbody>
+            <tr>
+            <td>Malith</td>
+            <td>Shehan</td>
+            <td>0725592323</td>
+            <td>malithshehan@gmail.com</td>
+            <td>Galle</td>
+        </tr>
+        <tr>
+            <td>Shehan</td>
+            <td>Sandakalum</td>
+            <td>0725592323</td>
+            <td>shehansandakalum2003@gmail.com</td>
+            <td>Mathara</td>
+        </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+    <!--Items-->
+
+    <table>
+        <thead>
+            <tr>
+                <h1><u>Items</u></h1>
+                <th>Item Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Chocalate</td>
+                <td>100</td>
+                <td>150.00</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>300</td>
+                <td>500.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>---</td>
+                <td>300.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Numbers Table -->
+
+    <table style="text-align: center; width: 200px;">
+        <h1><u>Table Colspan</u></h1>
+
+        <tr style=" height: 50px;">
+            <td colspan="2">1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr style=" height: 50px;">
+            <td>5</td>
+            <td colspan="3">6</td>
+            
+        </tr>
+        <tr style=" height: 50px;">
+            <td>9</td>
+            <td colspan="2">10</td>
+            <td>12</td>
+        </tr>
+        <tr style=" height: 50px;">
+            <td colspan="3">13</td>
+
+            <td>16</td>
+        </tr>
+    </table>
+
+        <p>Table</p>
+
+        <table style="text-align: center; width: 200px;">
+        <tr style="height: 50px;">
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr style="height: 50px;">
+            <td rowspan="3">6</td>
+            <td>7</td>
+            <td rowspan="3">8</td>
+        </tr>
+
+        <tr style="height: 50px;">
+            <td rowspan="2">9</td>
+            <td>11</td>
+        </tr>
+
+        <tr style="height: 50px;">
+            <td>15</td>
+        </tr>
+    </table>
+</body>
+</html>
