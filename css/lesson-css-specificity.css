@@ -1,0 +1,38 @@
+p {
+    color: blue;
+    font-size: 20px;
+    
+}
+
+.content {
+    color: red;
+}
+
+#content-id {
+    color: red;
+}
+
+h4 {
+    color: chocolate;
+    font-weight: bold;
+}
+
+.card-title {
+    color: blue;
+}
+
+.recipt-card-title {
+    color: teal;
+}
+
+div h4 {
+    color: greenyellow;
+}
+
+div .card-title {
+    color: rgb(10, 219, 69);
+}
+
+div #recipt-card-title {
+    color: darkred;
+}

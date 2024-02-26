@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-css-selector</title>
+    <style>
+        h2{
+            color: blue;
+        }
+        #main-heading{
+            color: blueviolet;
+        }
+        input[type="text"] {
+            background-color: rgba(1, 136, 255, 0.237);
+        }
+        
+        p {
+            color: black;
+            font-weight: bold;
+        }
+
+        
+
+        div p {
+            color: violet;
+        }
+
+        div h4 {
+            color: blue;
+        }
+
+        div div h4 {
+            color: red;
+        }
+
+        div > h5 {
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+            color: red;
+        }
+
+        h2 + p {
+            background-color: yellow;
+        }
+
+        h3 ~ p {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selector</h1>
+
+    <h1><u>1. Element Selector.</u></h1>
+    <h2>Element Selector</h2>
+
+    <h1><u>2. ID Selector.</u></h1>
+    <h2 id="main-heading">ID Selector</h2>
+
+    <h1><u>3. Class Selector.</u></h1>
+
+H  BGVC    <h2 class="class-selector">Class Selector</h2>
+    <h3 class="class-selector">Class Selector</h2>
+
+    <h1><u>4. Attribute Selector.</u></h1>
+    <br />
+    <input type="text" placeholder="Enter the full name">
+    <br />
+
+    <h1><u>5. Pseudo Classes Selector.</u></h1>
+    <br />
+    <button>Click</button>
+    <h1><u>6. Pseudo Element Selector.</u></h1>
+    
+
+    <div>
+        <p class="lorem">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Ad incidunt modi dolores repudiandae corporis rem, 
+            sed illo quibusdam quasi doloremque labore repellat 
+            cupiditate libero qui ullam voluptatum explicabo aliquid impedit.
+        </p>
+    </div>
+
+    <div>
+        <h4>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Ad incidunt modi dolores repudiandae corporis rem, 
+            sed illo quibusdam quasi doloremque labore repellat 
+            cupiditate libero qui ullam voluptatum explicabo aliquid impedit.
+        </h4>
+        <div>
+            <h4>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Ad incidunt modi dolores repudiandae corporis rem, 
+            sed illo quibusdam quasi doloremque labore repellat 
+            cupiditate libero qui ullam voluptatum explicabo aliquid impedit.
+            </h4>
+        </div>
+    </div>
+
+    <h1><u>8. Child Selector (>).</u></h1>
+    <div>
+        <h5>Java</h5>
+        <h5>Phython</h5>
+        <h5>Javascript</h5>
+        <h5>Typescript</h5>
+    </div>
+
+    <h1><u>9. Adjacent Sibling Selector.</u></h1>
+
+    <h2>Header-2</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad incidunt modi dolores repudiandae corporis rem, 
+        sed illo quibusdam quasi doloremque labore repellat 
+        cupiditate libero qui ullam voluptatum explicabo aliquid impedit.
+    </p>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad incidunt modi dolores repudiandae corporis rem, 
+        sed illo quibusdam quasi doloremque labore repellat 
+        cupiditate libero qui ullam voluptatum explicabo aliquid impedit.
+    </p>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad incidunt modi dolores repudiandae corporis rem, 
+        sed illo quibusdam quasi doloremque labore repellat 
+        cupiditate libero qui ullam voluptatum explicabo aliquid impedit.
+    </p>
+
+    <h1><u>10. Genaral Sibling Selector.</u></h1>
+    <h3>Header-3</h3>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Ad incidunt modi dolores repudiandae corporis rem, 
+        sed illo quibusdam quasi doloremque labore repellat 
+        cupiditate libero qui ullam voluptatum explicabo aliquid impedit.
+    </p>
+</body>
+</html>
