@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson CSS Gird Layout</title>
+    <style>
+        .container {
+            display: grid; 
+            /* grid-template-columns: 500px 500px 500px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+
+            column-gap: 12px;
+            row-gap: 12px;
+        }
+
+        .container > div {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            column-gap: 12px;
+            row-gap: 12px;
+        }
+        .nested > div {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.
+        </div>
+    
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.
+        </div>
+    
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.
+        </div>
+    
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.
+        </div>
+    
+        <div class="nested">
+            <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.</div>
+            <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.</div>
+            <div> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.</div>
+
+        </div>
+
+        
+
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.
+        </div>
+
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.
+        </div>
+
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.
+        </div>
+
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt reprehenderit dolore numquam quisquam velit, labore necessitatibus hic tempore corporis reiciendis facilis deleniti accusamus cum nulla corrupti doloremque ex aperiam.
+        </div>
+    </div>
+</body>
+</html>
